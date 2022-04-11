@@ -1,7 +1,7 @@
 {
   "name": "render-file-live",
   "version": "1.0.0",
-  "description": "Quick mafs game",
+  "description": "Render small files live",
   "main": "dist/index.js",
   "bin": "dist/index.js",
   "scripts": {
