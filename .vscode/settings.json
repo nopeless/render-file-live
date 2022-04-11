@@ -1,0 +1,41 @@
+{
+  "files.eol": "\n",
+  "editor.detectIndentation": true,
+  "editor.insertSpaces": true,
+  "editor.tabSize": 2,
+  "[javascript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[python]": {
+    "editor.insertSpaces": false,
+    "editor.formatOnSave": false
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "files.exclude": {
+    "node_modules/": false,
+    ".git/": false,
+    "database/": false,
+    ".husky/": false,
+    "LICENSE": false,
+    "CONTRIBUTING.md": false,
+    ".nvmrc": false,
+    "package-lock.json": false,
+    ".gitattributes": false,
+    ".eslintignore": false,
+    "tests": false,
+    "src.copy/": false,
+    ".github/": false,
+    "nodemon.json": false,
+    ".prettierrc": false,
+    "eslintrc.cjs": false,
+    "authflow.drawio": false,
+    "ecosystem.config.json": false,
+    "coverage": false,
+    ".nyc_output": false
+  }
+}

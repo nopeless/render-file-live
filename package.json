@@ -1,0 +1,41 @@
+{
+  "name": "render-file-live",
+  "version": "1.0.0",
+  "description": "Quick mafs game",
+  "main": "dist/index.js",
+  "bin": "dist/index.js",
+  "scripts": {
+    "test": "mocha",
+    "test:coverage": "c8 npm run test"
+  },
+  "keywords": [
+    "utility"
+  ],
+  "type": "module",
+  "author": "nopeless",
+  "repository": "https://github.com/nopeless/render-file-live",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chai": "^4.3.0",
+    "@types/mocha": "^9.1.0",
+    "@typescript-eslint/eslint-plugin": "^5.18.0",
+    "c8": "^7.11.0",
+    "chai": "^4.3.6",
+    "eslint": "^8.13.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-import-quotes": "^0.0.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "mocha": "^9.2.2",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.3"
+  },
+  "dependencies": {
+    "@tinyhttp/app": "^2.0.20",
+    "chalk": "^5.0.1",
+    "chokidar": "^3.5.3",
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "serve-index": "^1.9.1",
+    "ws": "^8.5.0"
+  }
+}

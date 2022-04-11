@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snippet</title>
+  </head>
+  <script>
+    console.log("connecting to websocket");
+    const envStr = `<%- envStr %>`;
+    console.log(envStr);
+    const env = JSON.parse(envStr);
+    const ws = new WebSocket(`ws://localhost:${env.PORT}`);
+    ws.onopen = () => {
+      console.log("connected to websocket");
+    };
+    ws.onmessage = msg => {
+      console.log("recieved message")
+      console.log(msg);
+      if (msg.data === "reload") {
+        window.location.reload();
+      }
+    }
+
+  </script>
+  <style>
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+    }
+
+  </style>
+
+  <body><%- str %></body>
+
+</html>
