@@ -1,16 +1,13 @@
-#!/usr/bin/node
+#!/usr/bin/env node
 import path from "path";
 import { fileURLToPath } from "url";
 import fs from "fs";
-import { promisify } from "util";
-import http from "http";
 import readline from "readline";
 
 import express from "express";
-import serveIndex from "serve-index";
 import chokidar from "chokidar";
 import ejs from "ejs";
-import WebSocket, { WebSocketServer } from "ws";
+import { WebSocketServer } from "ws";
 import chalk from "chalk";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
