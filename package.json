@@ -1,6 +1,6 @@
 {
   "name": "render-file-live",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Render small files live",
   "main": "dist/index.js",
   "bin": "dist/index.js",
@@ -30,7 +30,6 @@
     "typescript": "^4.6.3"
   },
   "dependencies": {
-    "@tinyhttp/app": "^2.0.20",
     "chalk": "^5.0.1",
     "chokidar": "^3.5.3",
     "ejs": "^3.1.6",
