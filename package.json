@@ -1,7 +1,7 @@
 {
-  "name": "candice",
+  "name": "render-file-live",
   "version": "1.0.0",
-  "description": "Candice js library render small files live",
+  "description": "A small js library to render small files live",
   "main": "dist/index.js",
   "bin": "dist/index.js",
   "scripts": {
