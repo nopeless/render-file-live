@@ -48,7 +48,13 @@ const indexFile = fs.readFileSync(relPath(`../src/index.ejs`), {
 app.set(`view engine`, ejs);
 
 app.get(`/`, (req, res) => {
-  res.send(ejs.render(indexFile, { str: fs.readFileSync(FILE), envStr }));
+  res.send(
+    ejs.render(indexFile, {
+      FILE_CONTENT: fs.readFileSync(FILE),
+      envStr,
+      FILE_NAME: path.basename(FILE),
+    })
+  );
 });
 
 const server = app.listen(PORT, () => {
